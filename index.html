@@ -322,7 +322,7 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 24px;
-  padding-top: 140px;
+  padding-top: var(--nav-h);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -1433,8 +1433,6 @@
     <ul class="nav-links">
       <li><a href="#" onclick="showPage('home')">Home</a></li>
       <li><a href="#" onclick="showPage('services')">Services</a></li>
-      <li><a href="#" onclick="showPage('about')">About</a></li>
-      <li><a href="#" onclick="showPage('gallery')">Gallery</a></li>
       <li><a href="#" onclick="showPage('contact')">Contact</a></li>
     </ul>
     <div class="nav-cta">
@@ -1451,8 +1449,6 @@
 <div class="mobile-menu" id="mobileMenu">
   <a href="#" onclick="showPage('home');toggleMenu()">Home</a>
   <a href="#" onclick="showPage('services');toggleMenu()">Services</a>
-  <a href="#" onclick="showPage('about');toggleMenu()">About</a>
-  <a href="#" onclick="showPage('gallery');toggleMenu()">Gallery</a>
   <a href="#" onclick="showPage('contact');toggleMenu()">Contact</a>
   <div class="mobile-menu-phone"><i class="fas fa-phone" style="margin-right:8px"></i>(954) 984-4000</div>
 </div>
@@ -1463,7 +1459,7 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-bg">
-      <img src="hero.png" alt="Modern luxury fence and gate installation">
+      <img src="a_wide_angle_high_resolution_exterior_architectur.png" alt="Modern luxury fence and gate installation">
     </div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
@@ -1609,10 +1605,9 @@
           <div class="section-label">Why Choose Us</div>
           <h2 class="section-title">Built on <em>Trust</em>,<br>Defined by <em>Quality</em></h2>
           <div class="gold-line"></div>
-          <p class="section-subtitle">For over 20 years, Mark Fence & Railing has served South Florida homeowners and businesses with exceptional craftsmanship, fair pricing, and a commitment to getting it right — every single time.</p>
+          <p class="section-subtitle">For over 15 years, Mark Fence & Railing has served South Florida homeowners and businesses with exceptional craftsmanship, fair pricing, and a commitment to getting it right — every single time.</p>
           <div style="margin-top:36px;display:flex;gap:16px;flex-wrap:wrap;">
             <a href="#" class="btn btn-primary" onclick="showPage('contact')">Get Free Quote</a>
-            <a href="#" class="btn btn-outline" onclick="showPage('about')">Our Story</a>
           </div>
         </div>
         <div class="why-right reveal">
@@ -1728,7 +1723,7 @@
               <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
               <div>
                 <div class="contact-info-label">Email</div>
-                <div class="contact-info-value"><a href="mailto:info@markfenceandrailing.com">info@markfenceandrailing.com</a></div>
+                <div class="contact-info-value"><a href="mailto:info@markfencerailing.com">info@markfencerailing.com</a></div>
               </div>
             </div>
             <div class="contact-info-item">
@@ -1761,19 +1756,18 @@
 <!-- ═══════════════════════════ SERVICES PAGE ═══════════════════════════ -->
 <div class="page" id="page-services">
 
-  <div class="page-hero">
-    <div class="page-hero-eyebrow">What We Install</div>
-    <h1>Our <em style="color:var(--gold);font-style:italic">Services</em></h1>
-    <p>Premium fencing and railing solutions for every property type and budget across South Florida.</p>
-  </div>
-
-  <div class="services-page">
+  <div class="services-page" style="padding-top: calc(var(--nav-h) + 60px);">
     <div class="container">
 
-      <!-- ALUMINUM -->
+      <div style="text-align:center; margin-bottom: 64px;" class="reveal">
+        <div class="section-label">What We Install</div>
+        <h2 class="section-title">Our <em>Services</em></h2>
+        <div class="gold-line" style="margin: 20px auto;"></div>
+        <p class="section-subtitle" style="margin: 0 auto;">Premium fencing and railing solutions for every property type and budget across South Florida.</p>
+      </div>
       <div class="service-detail reveal">
         <div class="service-detail-img">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&auto=format&fit=crop" alt="Aluminum fence South Florida">
+          <img src="Aluminum_Fence.jpg" alt="Aluminum fence South Florida">
           <div class="service-detail-img-badge">Most Popular</div>
         </div>
         <div class="service-detail-content">
@@ -1794,7 +1788,7 @@
       <!-- PVC -->
       <div class="service-detail reverse reveal">
         <div class="service-detail-img">
-          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&auto=format&fit=crop" alt="PVC vinyl fence">
+          <img src="PVC_Fence.jpg" alt="PVC vinyl fence">
           <div class="service-detail-img-badge">Low Maintenance</div>
         </div>
         <div class="service-detail-content">
@@ -1815,7 +1809,7 @@
       <!-- CHAIN LINK -->
       <div class="service-detail reveal">
         <div class="service-detail-img">
-          <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=700&auto=format&fit=crop" alt="Chain link fence commercial">
+          <img src="Chain_Link.jpg" alt="Chain link fence commercial">
           <div class="service-detail-img-badge">Best Value</div>
         </div>
         <div class="service-detail-content">
@@ -1836,7 +1830,7 @@
       <!-- WOOD -->
       <div class="service-detail reverse reveal">
         <div class="service-detail-img">
-          <img src="https://images.unsplash.com/photo-1615877416595-0c6dab68c5f0?w=700&auto=format&fit=crop" alt="Wood fence residential">
+          <img src="Wood_Fence.jpg" alt="Wood fence residential">
           <div class="service-detail-img-badge">Classic Look</div>
         </div>
         <div class="service-detail-content">
@@ -1857,7 +1851,7 @@
       <!-- GATES -->
       <div class="service-detail reveal">
         <div class="service-detail-img">
-          <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=700&auto=format&fit=crop" alt="Custom welded gate">
+          <img src="Custom_Gates.jpg" alt="Custom welded gate">
           <div class="service-detail-img-badge">Custom Built</div>
         </div>
         <div class="service-detail-content">
@@ -1878,7 +1872,7 @@
       <!-- RAILINGS -->
       <div class="service-detail reverse reveal">
         <div class="service-detail-img">
-          <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=700&auto=format&fit=crop" alt="Modern railings">
+          <img src="Railings.png" alt="Modern railings">
           <div class="service-detail-img-badge">Indoor & Outdoor</div>
         </div>
         <div class="service-detail-content">
@@ -1899,7 +1893,7 @@
       <!-- TEMPORARY -->
       <div class="service-detail reveal">
         <div class="service-detail-img">
-          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&auto=format&fit=crop" alt="Temporary fence rental">
+          <img src="Temp_Fence.png" alt="Temporary fence rental">
           <div class="service-detail-img-badge">Rental Available</div>
         </div>
         <div class="service-detail-content">
@@ -1923,217 +1917,81 @@
 <!-- ═══════════════════════ END SERVICES PAGE ═══════════════════════ -->
 
 
-<!-- ═══════════════════════════ ABOUT PAGE ═══════════════════════════ -->
-<div class="page" id="page-about">
-
-  <div class="page-hero">
-    <div class="page-hero-eyebrow">Who We Are</div>
-    <h1>About <em style="color:var(--gold);font-style:italic">Mark Fence</em></h1>
-    <p>A family-operated South Florida fencing company built on integrity, craftsmanship, and community.</p>
-  </div>
-
-  <div class="about-page">
-    <section class="about-story">
-      <div class="container">
-        <div class="about-inner">
-          <div class="about-img reveal">
-            <img class="about-img-main" src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&auto=format&fit=crop" alt="Fence installation team">
-            <img class="about-img-accent" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&auto=format&fit=crop" alt="Quality fence work">
-            <div class="about-img-tag">
-              <div class="about-img-tag-num">20+</div>
-              <div class="about-img-tag-text">Years of<br>Excellence</div>
-            </div>
-          </div>
-          <div class="about-content reveal">
-            <div class="section-label">Our Story</div>
-            <h2 class="section-title">South Florida's<br><em>Trusted Fence Family</em></h2>
-            <div class="gold-line"></div>
-            <p>Mark Fence & Railing was founded with a simple mission: deliver the highest quality fencing work in South Florida at prices that are fair and transparent. What started as a small crew serving Fort Lauderdale has grown into one of the region's most respected fencing contractors.</p>
-            <p>We serve Broward County, Miami-Dade, and Palm Beach with the same attention to detail and personal touch we've maintained since day one. As a family-operated business, every project we take on is a reflection of our name and our reputation — and we take both seriously.</p>
-            <p>Our team is made up of seasoned professionals who understand South Florida's unique climate challenges. From high-wind building codes to salt air corrosion, we select materials and techniques that deliver lasting results in our demanding environment.</p>
-            <p>Whether you're a homeowner looking to enhance your backyard or a commercial property manager overseeing a large security perimeter, Mark Fence & Railing brings the same standard of excellence to every single job.</p>
-            <div style="margin-top:32px;">
-              <a href="#" class="btn btn-primary" onclick="showPage('contact')">Get Your Free Estimate</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="about-values">
-      <div class="container">
-        <div style="text-align:center" class="reveal">
-          <div class="section-label">Our Foundation</div>
-          <h2 class="section-title">The Values We<br><em>Build On</em></h2>
-          <div class="gold-line" style="margin:20px auto"></div>
-        </div>
-        <div class="values-grid">
-          <div class="value-card reveal">
-            <div class="value-icon"><i class="fas fa-award"></i></div>
-            <h3>Quality First</h3>
-            <p>We never cut corners. Every installation uses premium materials and tested techniques built for Florida's demands.</p>
-          </div>
-          <div class="value-card reveal">
-            <div class="value-icon"><i class="fas fa-handshake"></i></div>
-            <h3>Integrity</h3>
-            <p>Honest pricing, clear communication, and no surprises. We say what we'll do — and do what we say.</p>
-          </div>
-          <div class="value-card reveal">
-            <div class="value-icon"><i class="fas fa-users"></i></div>
-            <h3>Community</h3>
-            <p>Locally owned and operated. We live and work in South Florida, and we're proud to serve our neighbors.</p>
-          </div>
-          <div class="value-card reveal">
-            <div class="value-icon"><i class="fas fa-shield-alt"></i></div>
-            <h3>Licensed & Insured</h3>
-            <p>Full licensing, liability insurance, and workers' comp so you're fully protected on every project.</p>
-          </div>
-          <div class="value-card reveal">
-            <div class="value-icon"><i class="fas fa-thumbs-up"></i></div>
-            <h3>Satisfaction</h3>
-            <p>Your happiness is our most important metric. We don't close a job until you're fully satisfied.</p>
-          </div>
-          <div class="value-card reveal">
-            <div class="value-icon"><i class="fas fa-hard-hat"></i></div>
-            <h3>Experience</h3>
-            <p>20+ years of residential and commercial projects means we've seen it all and solved it all.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Stats Bar -->
-    <div class="trust-bar" style="padding:40px 0">
-      <div class="trust-bar-inner container" style="justify-content:space-around;gap:32px">
-        <div style="text-align:center">
-          <div style="font-family:var(--font-display);font-size:3rem;font-weight:600;color:var(--gold)">2,500+</div>
-          <div style="font-family:var(--font-condensed);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--subtle);margin-top:4px">Projects Completed</div>
-        </div>
-        <div style="text-align:center">
-          <div style="font-family:var(--font-display);font-size:3rem;font-weight:600;color:var(--gold)">20+</div>
-          <div style="font-family:var(--font-condensed);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--subtle);margin-top:4px">Years in Business</div>
-        </div>
-        <div style="text-align:center">
-          <div style="font-family:var(--font-display);font-size:3rem;font-weight:600;color:var(--gold)">180+</div>
-          <div style="font-family:var(--font-condensed);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--subtle);margin-top:4px">Five-Star Reviews</div>
-        </div>
-        <div style="text-align:center">
-          <div style="font-family:var(--font-display);font-size:3rem;font-weight:600;color:var(--gold)">3</div>
-          <div style="font-family:var(--font-condensed);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--subtle);margin-top:4px">Counties Served</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CTA -->
-    <div class="cta-band">
-      <div class="container cta-band-content">
-        <h2>Let's Work Together</h2>
-        <p>Ready to start your fencing project? We'd love to hear from you.</p>
-        <div class="cta-band-btns">
-          <a href="#" class="btn btn-white" onclick="showPage('contact')">Request Free Estimate</a>
-          <a href="tel:+19549844000" class="btn" style="border:2px solid rgba(0,0,0,0.3);color:var(--black)"><i class="fas fa-phone"></i> Call Now</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- ═══════════════════════ END ABOUT PAGE ═══════════════════════ -->
-
-
-<!-- ═══════════════════════════ GALLERY PAGE ═══════════════════════════ -->
-<div class="page" id="page-gallery">
-
-  <div class="page-hero">
-    <div class="page-hero-eyebrow">Portfolio</div>
-    <h1>Our <em style="color:var(--gold);font-style:italic">Work</em></h1>
-    <p>Browse our portfolio of completed projects across South Florida — from elegant residential installs to large commercial perimeters.</p>
-  </div>
-
-  <div class="gallery-page">
-    <div class="container">
-      <div class="gallery-filters">
-        <button class="filter-btn active" onclick="filterGallery('all', this)">All Projects</button>
-        <button class="filter-btn" onclick="filterGallery('aluminum', this)">Aluminum</button>
-        <button class="filter-btn" onclick="filterGallery('pvc', this)">PVC / Vinyl</button>
-        <button class="filter-btn" onclick="filterGallery('wood', this)">Wood</button>
-        <button class="filter-btn" onclick="filterGallery('gate', this)">Gates</button>
-        <button class="filter-btn" onclick="filterGallery('railing', this)">Railings</button>
-        <button class="filter-btn" onclick="filterGallery('commercial', this)">Commercial</button>
-      </div>
-      <div class="gallery-masonry" id="galleryGrid">
-        <div class="gallery-item" data-cat="aluminum" onclick="openLightbox(this.querySelector('img').src)">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&auto=format&fit=crop" alt="Aluminum fence residential">
-          <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
-        </div>
-        <div class="gallery-item" data-cat="gate" onclick="openLightbox(this.querySelector('img').src)">
-          <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=500&auto=format&fit=crop" alt="Custom gate">
-          <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
-        </div>
-        <div class="gallery-item" data-cat="pvc" onclick="openLightbox(this.querySelector('img').src)">
-          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=500&auto=format&fit=crop" alt="PVC fence">
-          <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
-        </div>
-        <div class="gallery-item" data-cat="commercial" onclick="openLightbox(this.querySelector('img').src)">
-          <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=500&auto=format&fit=crop" alt="Commercial fence">
-          <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
-        </div>
-        <div class="gallery-item" data-cat="railing" onclick="openLightbox(this.querySelector('img').src)">
-          <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=500&auto=format&fit=crop" alt="Modern railing">
-          <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
-        </div>
-        <div class="gallery-item" data-cat="aluminum" onclick="openLightbox(this.querySelector('img').src)">
-          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500&auto=format&fit=crop" alt="Aluminum fence premium">
-          <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
-        </div>
-        <div class="gallery-item" data-cat="wood" onclick="openLightbox(this.querySelector('img').src)">
-          <img src="https://images.unsplash.com/photo-1615877416595-0c6dab68c5f0?w=500&auto=format&fit=crop" alt="Wood fence">
-          <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
-        </div>
-        <div class="gallery-item" data-cat="commercial" onclick="openLightbox(this.querySelector('img').src)">
-          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=500&auto=format&fit=crop" alt="Commercial project">
-          <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
-        </div>
-        <div class="gallery-item" data-cat="gate" onclick="openLightbox(this.querySelector('img').src)">
-          <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=500&auto=format&fit=crop" alt="Luxury property gate">
-          <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
-        </div>
-        <div class="gallery-item" data-cat="railing" onclick="openLightbox(this.querySelector('img').src)">
-          <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=500&auto=format&fit=crop" alt="Interior railing">
-          <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
-        </div>
-        <div class="gallery-item" data-cat="pvc" onclick="openLightbox(this.querySelector('img').src)">
-          <img src="https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=500&auto=format&fit=crop" alt="Vinyl fence neighborhood">
-          <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
-        </div>
-        <div class="gallery-item" data-cat="aluminum" onclick="openLightbox(this.querySelector('img').src)">
-          <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=500&auto=format&fit=crop" alt="Pool fence aluminum">
-          <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Lightbox -->
-<div class="lightbox" id="lightbox" onclick="closeLightbox()">
-  <i class="fas fa-times lightbox-close"></i>
-  <img id="lightboxImg" src="" alt="Project photo">
-</div>
-<!-- ═══════════════════════ END GALLERY PAGE ═══════════════════════ -->
-
-
 <!-- ═══════════════════════════ CONTACT PAGE ═══════════════════════════ -->
 <div class="page" id="page-contact">
 
-  <div class="page-hero">
-    <div class="page-hero-eyebrow">Get In Touch</div>
-    <h1>Contact <em style="color:var(--gold);font-style:italic">Us</em></h1>
-    <p>Request a free estimate or ask us anything. We respond within 24 hours, often much faster.</p>
-  </div>
-
-  <div class="contact-page">
+  <div class="contact-page" style="padding-top: calc(var(--nav-h) + 60px);">
     <div class="container">
+      <div style="text-align:center; margin-bottom: 64px;" class="reveal">
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-title">Contact <em>Us</em></h2>
+        <div class="gold-line" style="margin: 20px auto;"></div>
+        <p class="section-subtitle" style="margin: 0 auto;">Request a free estimate or ask us anything. We respond within 24 hours, often much faster.</p>
+      </div>
       <div class="contact-page-inner">
+
+        <div class="reveal">
+          <div class="section-label">Reach Us Directly</div>
+          <h2 class="section-title">We're<br><em>Here to Help</em></h2>
+          <div class="gold-line"></div>
+
+          <div class="contact-info-items" style="margin-top:32px">
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <div class="contact-info-label">Phone</div>
+                <div class="contact-info-value"><a href="tel:+19549844000">(954) 300-1234</a></div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <div class="contact-info-label">Email</div>
+                <div class="contact-info-value"><a href="mailto:info@markfencerailing.com">info@markfencerailing.com</a></div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <div class="contact-info-label">Office Address</div>
+                <div class="contact-info-value">501 SW 21st Terrace #3<br>Fort Lauderdale, FL 33312</div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fas fa-map"></i></div>
+              <div>
+                <div class="contact-info-label">Service Area</div>
+                <div class="contact-info-value">All South Florida<br>Broward · Miami-Dade · Palm Beach</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:36px">
+            <div class="section-label" style="margin-bottom:12px">Business Hours</div>
+            <div class="hours-grid">
+              <div class="hours-item">
+                <div class="hours-day">Monday – Friday</div>
+                <div class="hours-time">7:00 AM – 6:00 PM</div>
+              </div>
+              <div class="hours-item">
+                <div class="hours-day">Saturday</div>
+                <div class="hours-time">8:00 AM – 4:00 PM</div>
+              </div>
+              <div class="hours-item">
+                <div class="hours-day">Sunday</div>
+                <div class="hours-time">By Appointment</div>
+              </div>
+              <div class="hours-item">
+                <div class="hours-day">Emergency</div>
+                <div class="hours-time">Available 24/7</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-embed" style="margin-top:32px">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.5!2d-80.1537!3d26.0862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9a2d3b4c5f5f5%3A0x1a2b3c4d5e6f7a8b!2s501+SW+21st+Terrace%2C+Fort+Lauderdale%2C+FL+33312!5e0!3m2!1sen!2sus!4v1234567890" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
 
         <div class="reveal">
           <div class="section-label">Free Estimate</div>
@@ -2186,7 +2044,6 @@
                 <option>Railings</option>
                 <option>Temporary Fence Rental</option>
                 <option>Multiple Services</option>
-                <option>Other</option>
               </select>
             </div>
             <div class="form-group">
@@ -2252,8 +2109,6 @@
         <h4>Company</h4>
         <div class="footer-links">
           <a href="#" onclick="showPage('home')"><i class="fas fa-chevron-right"></i>Home</a>
-          <a href="#" onclick="showPage('about')"><i class="fas fa-chevron-right"></i>About Us</a>
-          <a href="#" onclick="showPage('gallery')"><i class="fas fa-chevron-right"></i>Gallery</a>
           <a href="#" onclick="showPage('contact')"><i class="fas fa-chevron-right"></i>Contact</a>
           <a href="#" onclick="showPage('contact')"><i class="fas fa-chevron-right"></i>Free Estimate</a>
         </div>
@@ -2262,8 +2117,8 @@
         <h4>Contact</h4>
         <div class="footer-links">
           <a href="tel:+19549844000"><i class="fas fa-phone"></i>(954) 984-4000</a>
-          <a href="mailto:info@markfenceandrailing.com"><i class="fas fa-envelope"></i>info@markfenceandrailing.com</a>
-          <a href="#"><i class="fas fa-map-marker-alt"></i>501 SW 21st Terrace #3<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fort Lauderdale, FL 33312</a>
+          <a href="mailto:info@markfencerailing.com"><i class="fas fa-envelope"></i>info@markfencerailing.com</a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i>501 SW 21st Terrace #3<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fort Lauderdale, FL</a>
         </div>
       </div>
     </div>
