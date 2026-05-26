@@ -1996,24 +1996,25 @@
           <div class="section-label">Free Estimate</div>
           <h2 class="section-title">Request Your<br><em>Free Quote</em></h2>
           <div class="gold-line"></div>
-          <form class="contact-form" onsubmit="handleSubmit(event, 'contact-success')">
+          <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" name="access_key" value="1c41f8c5-2fc3-4e4a-9524-60e9b370fb9e">
             <div class="form-row">
               <div class="form-group">
                 <label class="form-label">First Name *</label>
-                <input type="text" class="form-input" placeholder="John" required>
+                <input type="text" name="first_name" class="form-input" placeholder="John" required>
               </div>
               <div class="form-group">
                 <label class="form-label">Last Name *</label>
-                <input type="text" class="form-input" placeholder="Smith" required>
+                <input type="text" name="last_name" class="form-input" placeholder="Smith" required>
               </div>
             </div>
             <div class="form-group">
               <label class="form-label">Phone Number *</label>
-              <input type="tel" class="form-input" placeholder="(954) 000-0000" required>
+              <input type="tel" name="phone" class="form-input" placeholder="(954) 000-0000" required>
             </div>
             <div class="form-group">
               <label class="form-label">Email Address</label>
-              <input type="email" class="form-input" placeholder="john@email.com">
+              <input type="email" name="email" class="form-input" placeholder="john@email.com">
             </div>
             <div class="form-group">
               <label class="form-label">Property Address</label>
@@ -2033,7 +2034,7 @@
             </div>
             <div class="form-group">
               <label class="form-label">Service Needed *</label>
-              <select class="form-select" required>
+              <select name="service_needed" class="form-select" required>
                 <option value="">Select service...</option>
                 <option>Aluminum Fence</option>
                 <option>PVC / Vinyl Fence</option>
@@ -2058,7 +2059,7 @@
             </div>
             <div class="form-group">
               <label class="form-label">Project Details</label>
-              <textarea class="form-textarea" placeholder="Tell us more about your project — any special requirements, style preferences, timeline, or questions..."></textarea>
+              <textarea name="message" class="form-textarea" placeholder="Tell us more about your project — any special requirements, style preferences, timeline, or questions..."></textarea>
             </div>
             <button type="submit" class="btn btn-primary form-submit" style="width:100%;justify-content:center;padding:18px;">
               <i class="fas fa-paper-plane"></i> Send My Free Estimate Request
