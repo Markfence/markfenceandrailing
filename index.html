@@ -1420,15 +1420,31 @@
     .hero-actions .btn { width: 100%; justify-content: center; }
   }
 </style>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18231420520">
-</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18231420520"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'AW-18231420520');
+</script>
+
+<!-- Event snippet for Contact conversion -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18231420520/Q9D5CKy6ysIcEOjMtfVD',
+      'event_callback': callback
+  });
+  return false;
+}
 </script>
 </head>
 <body>
@@ -1675,7 +1691,7 @@
           <div class="section-label">Get In Touch</div>
           <h2 class="section-title">Request Your<br><em>Free Estimate</em></h2>
           <div class="gold-line"></div>
-          <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" onsubmit="gtag_report_conversion(); return true;">
 <input type="hidden" name="access_key" value="1c41f8c5-2fc3-4e4a-9524-60e9b370fb9e">
             <div class="form-row">
               <div class="form-group">
@@ -2007,7 +2023,7 @@
           <div class="section-label">Free Estimate</div>
           <h2 class="section-title">Request Your<br><em>Free Quote</em></h2>
           <div class="gold-line"></div>
-          <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" onsubmit="gtag_report_conversion(); return true;">
 <input type="hidden" name="access_key" value="1c41f8c5-2fc3-4e4a-9524-60e9b370fb9e">
             <div class="form-row">
               <div class="form-group">
